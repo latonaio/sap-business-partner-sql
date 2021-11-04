@@ -14,7 +14,7 @@ CREATE TABLE `sap-business-partner-supplier-purchasing-organization-data`
     `SupplierPhoneNumber`   varchar(16) DEFAULT NULL,
     `SupplierRespSalesPersonName` varchar(30) DEFAULT NULL,
     `DeletionIndicator`     varchar(1) DEFAULT NULL,
-    PRIMARY KEY (`Supplier`),
+    PRIMARY KEY (`Supplier`, `PurchasingOrganization`),
     CONSTRAINT `Supplier_fk` FOREIGN KEY (`Supplier`) REFERENCES `sap-business-partner-role-data` (`ManufacturingOrder`)
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;
