@@ -13,6 +13,7 @@ sap-business-partner-sql には、sqlの設定ファイルとして、以下の�
 
 * sap-business-partner-sql-role-data.sql  
 * sap-business-partner-sql-supplier-purchasing-organization-data.sql  
+* sap-business-partner-sql-supplier-company-data.sql  
 
 ## MySQLのセットアップ / Kubernetesの設定 / SQLテーブルの作成方法  
 MySQLのセットアップ / Kubernetesの設定 / 具体的なSQLテーブルの作成方法、については、[mysql-kube](https://github.com/latonaio/mysql-kube)を参照ください。  
