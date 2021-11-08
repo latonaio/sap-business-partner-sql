@@ -15,7 +15,7 @@ CREATE TABLE `sap-business-partner-address-data`
     `to_MobilePhoneNumber`  varchar(30) DEFAULT NULL,
     `to_PhoneNumber`        varchar(30) DEFAULT NULL,
     `to_URLAddress`         varchar(132) DEFAULT NULL,
-    PRIMARY KEY (`BusinessPartner`),
+    PRIMARY KEY (`BusinessPartner`, `ValidityEndDate`),
     CONSTRAINT `BusinessPartner_fk` FOREIGN KEY (`BusinessPartner`) REFERENCES `sap-business-partner-role-data` (`BusinessPartner`)
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;
