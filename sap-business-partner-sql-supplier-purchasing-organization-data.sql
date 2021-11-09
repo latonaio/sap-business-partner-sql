@@ -9,10 +9,10 @@ CREATE TABLE `sap-business-partner-supplier-purchasing-organization-data`
     `PurOrdAutoGenerationIsAllowed` varchar(1) DEFAULT NULL,
     `PurchaseOrderCurrency` varchar(5) DEFAULT NULL,
     `PurchasingGroup`       varchar(3) DEFAULT NULL,
-    `PurchasingIsBlockedForSupplier` varchar(1) DEFAULT NULL,
     `ShippingCondition`     varchar(2) DEFAULT NULL,
     `SupplierPhoneNumber`   varchar(16) DEFAULT NULL,
     `SupplierRespSalesPersonName` varchar(30) DEFAULT NULL,
+    `PurchasingIsBlockedForSupplier` varchar(1) DEFAULT NULL,
     `DeletionIndicator`     varchar(1) DEFAULT NULL,
     PRIMARY KEY (`Supplier`, `PurchasingOrganization`),
     CONSTRAINT `Supplier_fk` FOREIGN KEY (`Supplier`) REFERENCES `sap-business-partner-role-data` (`BusinessPartner`)
