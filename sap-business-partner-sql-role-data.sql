@@ -4,6 +4,6 @@ CREATE TABLE `sap-business-partner-role-data`
     `BusinessPartnerRole`   varchar(7) DEFAULT NULL,
     `ValidFrom`             date DEFAULT NULL,
     `ValidTo`               date DEFAULT NULL,
-    PRIMARY KEY (`BusinessPartner`, `BusinessPartnerRole`),
+    PRIMARY KEY (`BusinessPartner`, `BusinessPartnerRole`)
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;
