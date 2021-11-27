@@ -1,5 +1,5 @@
 # sap-business-partner-sql 
-sap-business-partner-sql  は、主にエッジアプリケーションにおいて、SAPと連携されたBP（ビジネスパートナー）データを保存するSQLテーブルを作成するためのレポジトリです。  
+sap-business-partner-sql  は、主にエッジアプリケーションにおいて、SAPと連携されたBP（ビジネスパートナ）データを保存するSQLテーブルを作成するためのレポジトリです。  
 sap-business-partner-sql  は、そのままクラウド環境におけるアプリケーションにも、適用可能です。  
 
 ## 前提条件  
