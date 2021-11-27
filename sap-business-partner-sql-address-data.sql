@@ -2,8 +2,8 @@ CREATE TABLE `sap-business-partner-address-data`
 (
     `BusinessPartner`       varchar(10) DEFAULT NULL,
     `AddressID`             varchar(10) DEFAULT NULL,
-    `ValidityStartDate`     varchar(8) DEFAULT NULL,
-    `ValidityEndDate`       varchar(8) DEFAULT NULL,
+    `ValidityStartDate`     date DEFAULT NULL,
+    `ValidityEndDate`       date DEFAULT NULL,
     `Country`               varchar(3) DEFAULT NULL,
     `Region`                varchar(3) DEFAULT NULL,
     `StreetName`            varchar(60) DEFAULT NULL,
