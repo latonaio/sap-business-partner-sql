@@ -5,7 +5,7 @@ CREATE TABLE `sap-business-partner-customer-sales-area-data`
     `SalesOrganization`     varchar(4) DEFAULT NULL,
     `DistributionChannel`   varchar(2) DEFAULT NULL,
     `Division`              varchar(2) DEFAULT NULL,
-    `CompleteDeliveryIsDefined` bool DEFAULT NULL,
+    `CompleteDeliveryIsDefined` tinyint(1) DEFAULT NULL,
     `Currency`              varchar(5) DEFAULT NULL,
     `CustomerAccountAssignmentGroup` varchar(2) DEFAULT NULL,
     `CustomerPaymentTerms`  varchar(4) DEFAULT NULL,
@@ -14,8 +14,8 @@ CREATE TABLE `sap-business-partner-customer-sales-area-data`
     `DeliveryPriority`      varchar(2) DEFAULT NULL,
     `IncotermsClassification` varchar(3) DEFAULT NULL,
     `InvoiceDate`           varchar(2) DEFAULT NULL,
-    `OrderCombinationIsAllowed` bool DEFAULT NULL,
-    `PartialDeliveryIsAllowed` bool DEFAULT NULL,
+    `OrderCombinationIsAllowed` tinyint(1) DEFAULT NULL,
+    `PartialDeliveryIsAllowed` tinyint(1) DEFAULT NULL,
     `PriceListType`         varchar(2) DEFAULT NULL,
     `SalesGroup`            varchar(3) DEFAULT NULL,
     `SalesOffice`           varchar(4) DEFAULT NULL,
@@ -27,7 +27,7 @@ CREATE TABLE `sap-business-partner-customer-sales-area-data`
     `OrderIsBlockedForCustomer` varchar(2) DEFAULT NULL,
     `DeliveryIsBlockedForCustomer` varchar(2) DEFAULT NULL,
     `BillingIsBlockedForCustomer` varchar(2) DEFAULT NULL,
-    `DeletionIndicator`     bool DEFAULT NULL,
+    `DeletionIndicator`     tinyint(1) DEFAULT NULL,
     PRIMARY KEY (`Customer`, `SalesOrganization`, `DistributionChannel`, `Division`),
     CONSTRAINT `Customer_fk` FOREIGN KEY (`Customer`) REFERENCES `sap-business-partner-role-data` (`BusinessPartner`)
 ) ENGINE = InnoDB
