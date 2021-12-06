@@ -1,7 +1,6 @@
 CREATE TABLE `sap-business-partner-customer-sales-area-data`
 (
     `Customer`              varchar(10) DEFAULT NULL,
-    `Customer_desc`         varchar(40) DEFAULT NULL,
     `SalesOrganization`     varchar(4) DEFAULT NULL,
     `DistributionChannel`   varchar(2) DEFAULT NULL,
     `Division`              varchar(2) DEFAULT NULL,

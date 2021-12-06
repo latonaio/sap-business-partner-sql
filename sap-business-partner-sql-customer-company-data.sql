@@ -1,7 +1,6 @@
 CREATE TABLE `sap-business-partner-customer-company-data`
 (
     `Customer`              varchar(10) DEFAULT NULL,
-    `Customer_desc`         varchar(40) DEFAULT NULL,
     `CompanyCode`           varchar(4) DEFAULT NULL,
     `APARToleranceGroup`    varchar(4) DEFAULT NULL,
     `CustomerSupplierClearingIsUsed` tinyint(1) DEFAULT NULL,

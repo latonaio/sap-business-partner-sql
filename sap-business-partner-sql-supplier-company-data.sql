@@ -1,7 +1,6 @@
 CREATE TABLE `sap-business-partner-supplier-company-data`
 (
     `Supplier`              varchar(10) DEFAULT NULL,
-    `Supplier_desc`         varchar(40) DEFAULT NULL,
     `CompanyCode`           varchar(4) DEFAULT NULL,
     `PaymentBlockingReason` varchar(1) DEFAULT NULL,
     `PaymentMethodsList`    varchar(10) DEFAULT NULL,
