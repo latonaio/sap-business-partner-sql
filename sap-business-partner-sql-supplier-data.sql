@@ -1,6 +1,6 @@
 CREATE TABLE `sap-business-partner-supplier-data`
 (
-  `Supplier`                     varchar(10) DEFAULT NULL,
+  `Supplier`                     varchar(10) NOT NULL,
   `AuthorizationGroup`           varchar(4) DEFAULT NULL,
   `CreationDate`                 date DEFAULT NULL,
   `Customer`                     varchar(10) DEFAULT NULL,

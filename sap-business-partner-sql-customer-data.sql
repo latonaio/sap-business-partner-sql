@@ -1,6 +1,6 @@
 CREATE TABLE `sap-business-partner-customer-data`
 (
-  `Customer`                      varchar(10) DEFAULT NULL,
+  `Customer`                      varchar(10) NOT NULL,
   `AuthorizationGroup`            varchar(4) DEFAULT NULL,
   `BillingIsBlockedForCustomer`   varchar(2) DEFAULT NULL,
   `CreationDate`                  date DEFAULT NULL,

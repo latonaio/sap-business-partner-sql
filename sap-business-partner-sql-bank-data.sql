@@ -1,7 +1,7 @@
 CREATE TABLE `sap-business-partner-bank-data`
 (
-  `BusinessPartner`           varchar(10) DEFAULT NULL,
-  `BankIdentification`        varchar(4) DEFAULT NULL,
+  `BusinessPartner`           varchar(10) NOT NULL,
+  `BankIdentification`        varchar(4) NOT NULL,
   `BankCountryKey`            varchar(3) DEFAULT NULL,
   `BankName`                  varchar(60) DEFAULT NULL,
   `BankNumber`                varchar(15) DEFAULT NULL,

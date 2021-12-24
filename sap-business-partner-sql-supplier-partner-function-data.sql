@@ -1,10 +1,10 @@
 CREATE TABLE `sap-business-partner-supplier-partner-function-data`
 (
-  `Supplier`                varchar(10) DEFAULT NULL,
-  `PurchasingOrganization`  varchar(4) DEFAULT NULL,
-  `Plant`                   varchar(4) DEFAULT NULL,
+  `Supplier`                varchar(10) NOT NULL,
+  `PurchasingOrganization`  varchar(4) NOT NULL,
+  `PartnerCounter`          varchar(3) NOT NULL,
   `PartnerFunction`         varchar(2) DEFAULT NULL,
-  `PartnerCounter`          varchar(3) DEFAULT NULL,
+  `Plant`                   varchar(4) DEFAULT NULL,
   `DefaultPartner`          tinyint(1) DEFAULT NULL,
   `CreationDate`            date DEFAULT NULL,
   `ReferenceSupplier`       varchar(10) DEFAULT NULL,

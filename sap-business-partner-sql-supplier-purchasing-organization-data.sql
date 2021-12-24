@@ -1,7 +1,7 @@
 CREATE TABLE `sap-business-partner-supplier-purchasing-organization-data`
 (
-    `Supplier`              varchar(10) DEFAULT NULL,
-    `PurchasingOrganization` varchar(4) DEFAULT NULL,
+    `Supplier`              varchar(10) NOT NULL,
+    `PurchasingOrganization` varchar(4) NOT NULL,
     `IncotermsClassification` varchar(3) DEFAULT NULL,
     `InvoiceIsGoodsReceiptBased` tinyint(1) DEFAULT NULL,
     `PaymentTerms`          varchar(4) DEFAULT NULL,

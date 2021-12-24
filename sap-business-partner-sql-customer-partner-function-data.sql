@@ -1,10 +1,10 @@
 CREATE TABLE `sap-business-partner-customer-partner-function-data`
 (
-  `Customer`                    varchar(10) DEFAULT NULL,
-  `SalesOrganization`           varchar(4) DEFAULT NULL,
-  `DistributionChannel`         varchar(2) DEFAULT NULL,
-  `Division`                    varchar(2) DEFAULT NULL,
-  `PartnerCounter`              varchar(3) DEFAULT NULL,
+  `Customer`                    varchar(10) NOT NULL,
+  `SalesOrganization`           varchar(4) NOT NULL,
+  `DistributionChannel`         varchar(2) NOT NULL,
+  `Division`                    varchar(2) NOT NULL,
+  `PartnerCounter`              varchar(3) NOT NULL,
   `PartnerFunction`             varchar(2) DEFAULT NULL,
   `BPCustomerNumber`            varchar(10) DEFAULT NULL,
   `CustomerPartnerDescription`  varchar(30) DEFAULT NULL,

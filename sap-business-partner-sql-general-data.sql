@@ -1,6 +1,6 @@
 CREATE TABLE `sap-business-partner-genral-data`
 (
-  `BusinessPartner`                 varchar(10) DEFAULT NULL,
+  `BusinessPartner`                 varchar(10) NOT NULL,
   `Customer`                        varchar(10) DEFAULT NULL,
   `Supplier`                        varchar(10) DEFAULT NULL,
   `AcademicTitle`                   varchar(4) DEFAULT NULL,

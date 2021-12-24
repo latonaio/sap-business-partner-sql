@@ -1,7 +1,7 @@
 CREATE TABLE `sap-business-partner-customer-company-data`
 (
-    `Customer`              varchar(10) DEFAULT NULL,
-    `CompanyCode`           varchar(4) DEFAULT NULL,
+    `Customer`              varchar(10) NOT NULL,
+    `CompanyCode`           varchar(4) NOT NULL,
     `APARToleranceGroup`    varchar(4) DEFAULT NULL,
     `CustomerSupplierClearingIsUsed` tinyint(1) DEFAULT NULL,
     `HouseBank`             varchar(5) DEFAULT NULL,
@@ -10,6 +10,6 @@ CREATE TABLE `sap-business-partner-customer-company-data`
     `ReconciliationAccount` varchar(10) DEFAULT NULL,
     `DeletionIndicator`     tinyint(1) DEFAULT NULL,
     PRIMARY KEY (`Customer`, `CompanyCode`),
-    CONSTRAINT `Customer_fk` FOREIGN KEY (`Customer`) REFERENCES `sap-business-partner-role-data` (`BusinessPartner`)
+    CONSTRAINT `Customer_fk` FOREIGN KEY (`Customer`) REFERENCES `sap-business-partner-general-data` (`BusinessPartner`)
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;
