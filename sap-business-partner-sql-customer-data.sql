@@ -1,9 +1,9 @@
-CREATE TABLE `sap-business-partner-customer-data`
+CREATE TABLE `sap_business_partner_customer_data`
 (
   `Customer`                      varchar(10) NOT NULL,
   `AuthorizationGroup`            varchar(4) DEFAULT NULL,
   `BillingIsBlockedForCustomer`   varchar(2) DEFAULT NULL,
-  `CreationDate`                  date DEFAULT NULL,
+  `CreationDate`                  varchar(80) DEFAULT NULL,
   `CustomerAccountGroup`          varchar(4) DEFAULT NULL,
   `CustomerClassification`        varchar(2) DEFAULT NULL,
   `CustomerFullName`              varchar(220) DEFAULT NULL,
@@ -19,6 +19,6 @@ CREATE TABLE `sap-business-partner-customer-data`
   `CityCode`                      varchar(4) DEFAULT NULL,
   `County`                        varchar(3) DEFAULT NULL,
   PRIMARY KEY (`Customer`),
-  CONSTRAINT `Customer_fk` FOREIGN KEY (`Customer`) REFERENCES `sap-business-partner-general-data` (`Customer`)
+  CONSTRAINT `SAPBusinessPartnerCustomerData_fk` FOREIGN KEY (`Customer`) REFERENCES `sap_business_partner_general_data` (`Customer`)
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;

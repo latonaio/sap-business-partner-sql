@@ -1,4 +1,4 @@
-CREATE TABLE `sap-business-partner-supplier-purchasing-organization-data`
+CREATE TABLE `sap_business_partner_supplier_purchasing_organization_data`
 (
     `Supplier`              varchar(10) NOT NULL,
     `PurchasingOrganization` varchar(4) NOT NULL,
@@ -14,6 +14,6 @@ CREATE TABLE `sap-business-partner-supplier-purchasing-organization-data`
     `PurchasingIsBlockedForSupplier` tinyint(1) DEFAULT NULL,
     `DeletionIndicator`     tinyint(1) DEFAULT NULL,
     PRIMARY KEY (`Supplier`, `PurchasingOrganization`),
-    CONSTRAINT `Supplier_fk` FOREIGN KEY (`Supplier`) REFERENCES `sap-business-partner-role-data` (`BusinessPartner`)
+    CONSTRAINT `SAPBusinessPartnerSupplierPurchasingOrganizationData_fk` FOREIGN KEY (`Supplier`) REFERENCES `sap_business_partner_role_data` (`BusinessPartner`)
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;

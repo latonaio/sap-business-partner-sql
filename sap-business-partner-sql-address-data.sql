@@ -1,9 +1,9 @@
-CREATE TABLE `sap-business-partner-address-data`
+CREATE TABLE `sap_business_partner_address_data`
 (
     `BusinessPartner`       varchar(10) NOT NULL,
     `AddressID`             varchar(10) NOT NULL,
-    `ValidityEndDate`       date DEFAULT NOT NULL,
-    `ValidityStartDate`     date DEFAULT NULL,
+    `ValidityEndDate`       varchar(80) NOT NULL,
+    `ValidityStartDate`     varchar(80) DEFAULT NULL,
     `Country`               varchar(3) DEFAULT NULL,
     `Region`                varchar(3) DEFAULT NULL,
     `StreetName`            varchar(60) DEFAULT NULL,
@@ -11,6 +11,6 @@ CREATE TABLE `sap-business-partner-address-data`
     `PostalCode`            varchar(10) DEFAULT NULL,
     `Language`              varchar(2) DEFAULT NULL,
     PRIMARY KEY (`BusinessPartner`, `AddressID`, `ValidityEndDate`),
-    CONSTRAINT `BusinessPartner_fk` FOREIGN KEY (`BusinessPartner`) REFERENCES `sap-business-partner-general-data` (`BusinessPartner`)
+    CONSTRAINT `SAPBusinessPartnerAddressData_fk` FOREIGN KEY (`BusinessPartner`) REFERENCES `sap_business_partner_general_data` (`BusinessPartner`)
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;

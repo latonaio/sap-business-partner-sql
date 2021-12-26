@@ -1,4 +1,4 @@
-CREATE TABLE `sap-business-partner-customer-company-data`
+CREATE TABLE `sap_business_partner_customer_company_data`
 (
     `Customer`              varchar(10) NOT NULL,
     `CompanyCode`           varchar(4) NOT NULL,
@@ -10,6 +10,6 @@ CREATE TABLE `sap-business-partner-customer-company-data`
     `ReconciliationAccount` varchar(10) DEFAULT NULL,
     `DeletionIndicator`     tinyint(1) DEFAULT NULL,
     PRIMARY KEY (`Customer`, `CompanyCode`),
-    CONSTRAINT `Customer_fk` FOREIGN KEY (`Customer`) REFERENCES `sap-business-partner-general-data` (`BusinessPartner`)
+    CONSTRAINT `SAPBusinessPartnerCustomerCompanyData_fk` FOREIGN KEY (`Customer`) REFERENCES `sap_business_partner_general_data` (`BusinessPartner`)
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;

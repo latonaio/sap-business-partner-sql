@@ -1,8 +1,8 @@
-CREATE TABLE `sap-business-partner-supplier-data`
+CREATE TABLE `sap_business_partner_supplier_data`
 (
   `Supplier`                     varchar(10) NOT NULL,
   `AuthorizationGroup`           varchar(4) DEFAULT NULL,
-  `CreationDate`                 date DEFAULT NULL,
+  `CreationDate`                 varchar(80) DEFAULT NULL,
   `Customer`                     varchar(10) DEFAULT NULL,
   `PaymentIsBlockedForSupplier`  tinyint(1) DEFAULT NULL,
   `PostingIsBlocked`             tinyint(1) DEFAULT NULL,
@@ -10,13 +10,13 @@ CREATE TABLE `sap-business-partner-supplier-data`
   `SupplierAccountGroup`         varchar(4) DEFAULT NULL,
   `SupplierFullName`             varchar(220) DEFAULT NULL,
   `SupplierName`                 varchar(80) DEFAULT NULL,
-  `BirthDate`                    date DEFAULT NULL,
+  `BirthDate`                    varchar(80) DEFAULT NULL,
   `DeletionIndicator`            tinyint(1) DEFAULT NULL,
   `Industry`                     varchar(4) DEFAULT NULL,
   `IsNaturalPerson`              varchar(1) DEFAULT NULL,
   `SupplierCorporateGroup`       varchar(10) DEFAULT NULL,
   `SupplierProcurementBlock`     varchar(2) DEFAULT NULL,
   PRIMARY KEY (`Supplier`),
-  CONSTRAINT `Supplier_fk` FOREIGN KEY (`Supplier`) REFERENCES `sap-business-supplier-general-data` (`BusinesssPartner`)
+  CONSTRAINT `SAPBusinessPartnerSupplierData_fk` FOREIGN KEY (`Supplier`) REFERENCES `sap_business_supplier_general_data` (`BusinesssPartner`)
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;

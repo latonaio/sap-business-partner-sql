@@ -1,4 +1,4 @@
-CREATE TABLE `sap-business-partner-customer-sales-area-data`
+CREATE TABLE `sap_business_partner_customer_sales_area_data`
 (
     `Customer`              varchar(10) NOT NULL,
     `SalesOrganization`     varchar(4) NOT NULL,
@@ -28,6 +28,6 @@ CREATE TABLE `sap-business-partner-customer-sales-area-data`
     `BillingIsBlockedForCustomer` varchar(2) DEFAULT NULL,
     `DeletionIndicator`     tinyint(1) DEFAULT NULL,
     PRIMARY KEY (`Customer`, `SalesOrganization`, `DistributionChannel`, `Division`),
-    CONSTRAINT `Customer_fk` FOREIGN KEY (`Customer`) REFERENCES `sap-business-partner-general-data` (`BusinessPartner`)
+    CONSTRAINT `SAPBusinessPartnerCustomerSalesAreaData_fk` FOREIGN KEY (`Customer`) REFERENCES `sap_business_partner_general_data` (`BusinessPartner`)
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;
