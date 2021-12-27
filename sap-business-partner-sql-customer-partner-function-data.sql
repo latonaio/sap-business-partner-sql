@@ -12,6 +12,6 @@ CREATE TABLE `sap_business_partner_customer_partner_function_data`
   `Supplier`                    varchar(10) DEFAULT NULL,
   `AuthorizationGroup`          varchar(4) DEFAULT NULL,
   PRIMARY KEY (`Customer`, `SalesOrganization`, `DistributionChannel`, `Division`, `PartnerCounter`),
-  CONSTRAINT `SAPBusinessPartnerCustomerPartnerFunctionData_fk` FOREIGN KEY (`Customer`) REFERENCES `sap_business_partner_general_data` (`BusinessPartmer`)
+  CONSTRAINT `SAPBusinessPartnerCustomerPartnerFunctionData_fk` FOREIGN KEY (`Customer`) REFERENCES `sap_business_partner_general_data` (`BusinessPartner`)
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;

@@ -9,7 +9,7 @@ CREATE TABLE `sap_business_partner_supplier_partner_function_data`
   `CreationDate`            varchar(80) DEFAULT NULL,
   `ReferenceSupplier`       varchar(10) DEFAULT NULL,
   `AuthorizationGroup`      varchar(4) DEFAULT NULL,
-  PRIMARY KEY (`Supplier`, `PurchaseOrganization`, `PartnerCounter`),
-  CONSTRAINT `SAPBusinessPartnerSupplierFunctionData_fk` FOREIGN KEY (`Supplier`) REFERENCES `sap_business_partner_general_data` (`BusinessPartmer`)
+  PRIMARY KEY (`Supplier`, `PurchasingOrganization`, `PartnerCounter`),
+  CONSTRAINT `SAPBusinessPartnerSupplierFunctionData_fk` FOREIGN KEY (`Supplier`) REFERENCES `sap_business_partner_general_data` (`BusinessPartner`)
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;
