@@ -47,6 +47,6 @@ CREATE TABLE `sap_business_partner_general_data`
   `IsMarkedForArchiving`            tinyint(1) DEFAULT NULL,
   `BusinessPartnerIDByExtSystem`    varchar(20) DEFAULT NULL,
   `TradingPartner`                  varchar(6) DEFAULT NULL,
-    PRIMARY KEY (`BusinessPartner`)
+    PRIMARY KEY (`BusinessPartner`), UNIQUE (`Customer`)
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;

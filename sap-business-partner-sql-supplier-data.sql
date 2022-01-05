@@ -17,6 +17,6 @@ CREATE TABLE `sap_business_partner_supplier_data`
   `SupplierCorporateGroup`       varchar(10) DEFAULT NULL,
   `SupplierProcurementBlock`     varchar(2) DEFAULT NULL,
   PRIMARY KEY (`Supplier`),
-  CONSTRAINT `SAPBusinessPartnerSupplierData_fk` FOREIGN KEY (`Supplier`) REFERENCES `sap_business_partner_general_data` (`Customer`)
+  CONSTRAINT `SAPBusinessPartnerSupplierData_fk` FOREIGN KEY (`Supplier`) REFERENCES `sap_business_partner_general_data` (`BusinessPartner`)
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;

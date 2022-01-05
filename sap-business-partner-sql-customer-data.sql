@@ -19,6 +19,6 @@ CREATE TABLE `sap_business_partner_customer_data`
   `CityCode`                      varchar(4) DEFAULT NULL,
   `County`                        varchar(3) DEFAULT NULL,
   PRIMARY KEY (`Customer`),
-  CONSTRAINT `SAPBusinessPartnerCustomerData_fk` FOREIGN KEY (`Customer`) REFERENCES `sap_business_partner_general_data` (`Customer`)
+  CONSTRAINT `SAPBusinessPartnerCustomerData_fk` FOREIGN KEY (`Customer`) REFERENCES `sap_business_partner_general_data` (`BusinessPartner`)
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;
