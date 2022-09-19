@@ -15,6 +15,7 @@ sap-business-partner-sql には、sqlの設定ファイルとして、以下の�
 * sap-business-partner-sql-role-data.sql（SAP ビジネスパートナ - ロールデータ）  
 * sap-business-partner-sql-address-data.sql（SAP ビジネスパートナ - 住所データ）
 * sap-business-partner-sql-bank-data.sql （SAP ビジネスパートナ - 銀行データ）
+* sap-business-partner-sql-contact-data.sql（SAP ビジネスパートナ - コンタクトデータ）  
 * sap-business-partner-sql-customer-data.sql （SAP ビジネスパートナ - 得意先データ）
 * sap-business-partner-sql-customer-sales-area-data.sql（SAP ビジネスパートナ - 得意先 販売組織データ）
 * sap-business-partner-sql-customer-partner-function-data.sql（SAP ビジネスパートナ - 得意先 取引先機能データ）
